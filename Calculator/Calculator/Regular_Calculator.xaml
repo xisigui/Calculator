@@ -51,7 +51,7 @@
 
                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
                     <Button TextColor="White" BackgroundColor="#2B2C31"  Text="0" FontSize="Title" ></Button>
-                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="," FontSize="Title" ></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="." FontSize="Title" ></Button>
                     <Button  Text="="  TextColor="White" BackgroundColor="#2abb9b"  HorizontalOptions="FillAndExpand" FontSize="Title"  Clicked="OnCalculate"></Button>
                 </StackLayout>
 
