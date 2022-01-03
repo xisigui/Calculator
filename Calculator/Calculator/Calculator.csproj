@@ -16,8 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Regular_Calculator.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    <EmbeddedResource Update="BmiPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    
   </ItemGroup>
 </Project>
