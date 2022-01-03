@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Regular_Calculator">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>0,20,0,0</OnPlatform.iOS>
+        </OnPlatform>
+    </ContentPage.Padding>    
+
+    <Grid BackgroundColor="#24252a">
+
+        <Grid Grid.Row="0"  Margin="0,0,0,100">
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="EndAndExpand">
+                <Label x:Name="resultText" TextColor="White" Text="389" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
+            </StackLayout>
+        </Grid>
+        <Grid Grid.Row="1"   Margin="0,-100,0,0">
+            <StackLayout Orientation="Vertical"  Margin="20">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button  BackgroundColor="#2B2C31" TextColor="White" WidthRequest="50" HeightRequest="50" FontSize="Title" Text="C" HorizontalOptions="FillAndExpand" Clicked="OnClear"></Button>
+                    <Button Text="+/-" TextColor="White" BackgroundColor="#2B2C31" HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                    <Button Text="%" TextColor="White" BackgroundColor="#2B2C31" HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                    <Button Text="/" TextColor="White" BackgroundColor="#2abb9b" HorizontalOptions="FillAndExpand" FontSize="Title"  WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="7" HorizontalOptions="FillAndExpand"  FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="8" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="9" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+
+                    <Button  BackgroundColor="#2abb9b"  Text="x" TextColor="White" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand"  >
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="4" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="5" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="6" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+
+                    <Button  BackgroundColor="#2abb9b"  Text="-" TextColor="White" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="1" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="2" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="3" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectNumber"></Button>
+
+                    <Button  BackgroundColor="#2abb9b"  Text="+" TextColor="White"  HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50" Clicked="OnSelectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="0" FontSize="Title" ></Button>
+                    <Button TextColor="White" BackgroundColor="#2B2C31"  Text="." FontSize="Title" ></Button>
+                    <Button  Text="="  TextColor="White" BackgroundColor="#2abb9b"  HorizontalOptions="FillAndExpand" FontSize="Title"  Clicked="OnCalculate"></Button>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

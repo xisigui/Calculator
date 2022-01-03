@@ -10,7 +10,7 @@ namespace Calculator
         {
             InitializeComponent();
 
-            MainPage = new BmiPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

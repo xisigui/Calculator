@@ -19,5 +19,9 @@
     <EmbeddedResource Update="BmiPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    
   </ItemGroup>
 </Project>
