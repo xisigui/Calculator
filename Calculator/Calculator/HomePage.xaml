@@ -6,5 +6,6 @@
     
     <local:Regular_Calculator Title="Calculator"/>
     <local:BmiPage Title="BMI"/>
-    
+    <local:DateDif Title="Date Calculator"/>
+
 </TabbedPage>
